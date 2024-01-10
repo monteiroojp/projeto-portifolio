@@ -199,3 +199,18 @@ section.icon-desktop{
     
 }
 
+@media screen and (min-width:1200px) {
+    
+    body.wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section.icon-desktop{
+        justify-content: center;
+    }
+
+    img{
+        width: 60px;
+    }
+}
+
