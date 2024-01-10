@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/* Estilo base*/
+
+body.wrapper{
+    display: grid;
+    height: 97vh;
+    grid-template-columns: 1fr 5fr 1fr;
+    background-color: aquamarine;
+}
+
+img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+img:hover{
+    transform: translate(-3px, -3px);
+    outline: 3px solid white;
+    transition: translate 0.3s;
+    transition: outline 0.1s;
+}
+
+/*Mobile*/
+
+@media screen and (min-width:320px) and (max-width:600px) {
+    
+body.wrapper{
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+section.tablet{
+    display: none;
+}
+
+section.icon-tablet{
+    display: none;
+}
+
+section.desktop{
+    display: none;
+}
+
+section.icon-desktop{
+    display: none;
+}
+
+section.phone{
+    display: flex;
+    grid-column-start: 2;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+div.phone{
+    background-color: green;
+    height: 618px;
+    width: 320px;
+    background:  url(../imagens/phone.png) no-repeat;
+
+    position: relative;
+}
+
+iframe.phone{
+    position: absolute;
+    top: 53px;
+    left: 29px;
+
+    height: 446px;
+    width: 260px;
+    box-shadow: 0px 1px 6px 0px black;
+}
+
+section.icon-phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+}
+
+/*Tablets*/
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    
+section.phone{
+    display: none;
+}
+
+section.icon-phone{
+    display: none;
+}
+
+section.desktop{
+    display: none;
+}
+
+section.icon-desktop{
+    display: none;
+}
+
+
+section.tablet{
+    display: flex;
+    grid-column-start: 2;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+
+div.tablet{
+    background-color: green;
+    height: 337px;
+    width: 500px;
+    background:  url(../imagens/tablet.png) no-repeat;
+
+    position: relative;
+}
+
+iframe.tablet{
+    position: absolute;
+    top: 21px;
+    left: 21px;
+
+    width: 458px;
+    height: 286px;
+}
+
+section.icon-tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width:768px) {
+
+section.phone{
+    display: none;
+}
+
+section.icon-phone{
+    display: none;
+}
+
+section.tablet{
+    display: none;
+}
+
+section.icon-tablet{
+    display: none;
+}
+
+section.desktop{
+    display: flex;
+    grid-column-start: 2;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+div.desktop{
+    position: relative;
+
+    background: url(../imagens/desktop.png) no-repeat;
+    width: 668px;
+    height: 556px;
+}
+
+iframe.desktop{
+    position: absolute;
+    top: 59px;
+    left: 77px;
+
+    width: 523px;
+    height: 302px;
+    
+}
+
+section.icon-desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    
+}
+

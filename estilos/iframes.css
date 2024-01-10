@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+
+body{
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body a{
+    flex-basis: 10px;
+}
+img{
+    
+    width: 100%;
+    margin-bottom: 0px;
+
+}
+::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}
+
+a{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+}
+
